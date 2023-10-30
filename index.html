@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1544640808-32ca72ac7f37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(4px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Add a button style */
+button {
+  padding: 20px 50px;
+  font-size: 20px;
+  background-color: #FFEBCD; /* Green background color */
+  color: Black; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+  button:hover{
+    box-shadow : 0 12px 16px 0 rgba(0,0,0.5,0.5);
+}
+
+
+/* Style the button on hover */
+button:hover {
+  background-color: Grey;
+}
+
+/* Style for department buttons */
+.department-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.department-button {
+  margin: 0 10px;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<div class="bg-image"></div>
+<div class="bg-text">
+  <h1 style="font-size:50px">LIBRARY BOOK FINDER</h1>
+  <p>Search Your Books Easier</p>
+  <!-- Department buttons container -->
+  <div class="department-buttons">
+    <a href="file:///C:/Users/amukt/OneDrive/Documents/WAD/s1.html"><button class="department-button">CSE</button></a>
+    <a href="file:///C:/Users/amukt/OneDrive/Documents/WAD/s2.html"><button class="department-button">ECE</button></a>
+    <a href="file:///C:/Users/amukt/OneDrive/Documents/WAD/s4.html"><button class="department-button">MECHANICAL</button></a>
+    <a href="file:///C:/Users/amukt/OneDrive/Documents/WAD/s5.HTML"><button class="department-button">CIVIL</button></a>
+    
+    <!-- Add more buttons as needed -->
+  </div>
+</div>
+
+</body>
+</html>
